@@ -1,0 +1,94 @@
+# Lab Task 06 – Abstract Data Types (ADT)
+
+---
+
+## Objective
+
+The objective of this lab is to implement simple Abstract Data Types (ADTs) in Java, use interfaces to define contracts, and apply the principles of abstraction and encapsulation.
+
+---
+
+## Tasks Completed
+
+### Task 1 – Implementing the Stack ADT
+
+Implemented an `ArrayStack` class using Java's `ArrayList`.
+
+The following operations were tested:
+
+- `push(10)`
+- `push(20)`
+- `push(30)`
+- `pop()`
+
+The test verified that `pop()` returns `30`, demonstrating the LIFO (Last In, First Out) principle.
+
+---
+
+### Task 2 – Data Encapsulation
+
+Created a `Student` class containing private fields:
+
+- `id`
+- `name`
+- `cgpa`
+
+Public getter methods were implemented to access the private data:
+
+- `getId()`
+- `getName()`
+- `getCgpa()`
+
+This demonstrates data hiding and encapsulation.
+
+---
+
+### Task 3 – Programming to an Abstraction
+
+Used the Java `List` interface instead of depending on a specific implementation.
+
+The program used:
+
+- `ArrayList`
+- `LinkedList`
+
+The same `List<String>` variable was used with both implementations.
+
+---
+
+### Task 4 – Library System ADT
+
+Designed a Library System ADT using a Java interface.
+
+The following operations were implemented:
+
+- `addBook()`
+- `removeBook()`
+- `searchBook()`
+- `issueBook()`
+- `returnBook()`
+
+A `Book` class was created with:
+
+- Book ID
+- Title
+- Author
+
+The concrete `LibraryImplementation` class uses an `ArrayList` to store books.
+
+---
+
+### Task 5 – Student Management System
+
+Created the `StudentCollection` interface with the following operations:
+
+- `addStudent(Student student)`
+- `removeStudent(int id)`
+- `findStudent(int id)`
+- `getSize()`
+- `isEmpty()`
+
+A concrete implementation was created using an `ArrayList`.
+
+JUnit tests were written to validate the student collection operations.
+
